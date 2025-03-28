@@ -42,7 +42,7 @@ const initialise = async () => {
   server.setErrorConfig((app: Application) => {
     app.use(errorHandler);
   });
-
+  
   const apiServer = server.build();
   apiServer.listen(config.API_PORT, () =>
     console.log('The application is initialised on the port %s', config.API_PORT)
