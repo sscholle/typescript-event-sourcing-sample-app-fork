@@ -74,13 +74,19 @@ Below is the list of components in this project
 1. Node.js v20 or later & Yarn 1.22 or later
 2. Docker v27 (earlier or later should work)
 
+### Run Services
+1. Run Docker (all services, incl. Mongo, Redis, Kafka, Zookeeper)
+```bash
+docker-compose up -d
+```
+
 ### 1st Time Setup
 1. Copy the `.env_example` file into `.env` file by firing the command
 ```bash
 cp .env_template .env
 ```
 2. And Update the `.env` file with your Server Variables as needed (Defaults should work with Docker)
-3. Using this Yarn command the 'application' workspace will be triggered with the `dev` package script
+3. Using this Yarn command, the `application` workspace will be triggered with the `dev` package script
 ```bash
 yarn application dev
 ```
